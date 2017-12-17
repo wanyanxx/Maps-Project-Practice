@@ -36,6 +36,12 @@
           map: map,
           title: 'First Marker!'
         });
+        var infowindow = new google.maps.InfoWindow({
+          content:'王宇飞是是傻瓜！'
+        });
+        marker.addListener('click',function(){
+          infowindow.open(map,marker)
+        });
         }
         
     </script>
