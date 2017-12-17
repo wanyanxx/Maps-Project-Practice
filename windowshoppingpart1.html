@@ -62,7 +62,7 @@
             function populateInfowindow(marker,infowindow){
                 if(infowindow.marker != marker){
                     infowindow.marker = marker;
-                    infowindow.setContent(marker.title+'叫醒王宇飞！');
+                    infowindow.setContent(marker.title+'叫醒王宇飞！'+'<img src ="1.jpg">');
                     infowindow.open(map,marker);
                     infowindow.addListener('closeclick',function(){
                         infowindow.setMarker = null;
